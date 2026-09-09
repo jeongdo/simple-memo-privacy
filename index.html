@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Simple Memo 개인정보처리방침</title>
+  <meta name="description" content="Simple Memo(심플 메모) Android 앱 개인정보처리방침" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #111827;
+      --panel-2: #172033;
+      --text: #e5edf8;
+      --muted: #9aabc2;
+      --line: #26344d;
+      --accent: #62b4ff;
+      --good: #7dd3a8;
+      --warn: #f5c56b;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--bg); }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 0%, rgba(38, 108, 180, .16), transparent 34rem),
+        var(--bg);
+      line-height: 1.72;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 6vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .summary {
+      margin: 26px 0;
+      padding: 18px 20px;
+      border: 1px solid rgba(98, 180, 255, .28);
+      border-radius: 14px;
+      background: rgba(98, 180, 255, .07);
+    }
+
+    .summary strong { color: #d9efff; }
+
+    section {
+      margin-top: 18px;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(17, 24, 39, .88);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: -.01em;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 15px;
+    }
+
+    p { margin: 10px 0; }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li { margin-top: 7px; }
+
+    .muted { color: var(--muted); }
+    .good { color: var(--good); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    code {
+      padding: 2px 6px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-2);
+      color: #d8e7fb;
+      font-size: .92em;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      main { padding-top: 34px; }
+      section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Simple Memo · Privacy Policy</p>
+      <h1>개인정보처리방침</h1>
+      <p class="lead">
+        Simple Memo(심플 메모)는 사용자가 메모를 작성·검색·분류·보관하고,
+        필요할 경우 Google Drive에 백업할 수 있도록 제공되는 Android 메모 앱입니다.
+      </p>
+      <p class="muted">패키지 이름: <code>com.gwe.code.spotmemo</code></p>
+    </header>
+
+    <div class="summary">
+      <strong>핵심 원칙:</strong> 메모 내용과 분류 정보는 기본적으로 사용자의 기기에 저장되며,
+      Simple Memo 개발자가 운영하는 별도 서버로 메모 내용을 수집하거나 저장하지 않습니다.
+      사용자가 Google Drive 백업을 직접 사용하는 경우에만 백업 데이터가 사용자의 Google Drive로 전송됩니다.
+      무료 버전의 광고와 광고 제거 구매에는 Google의 광고·동의·결제 서비스가 사용됩니다.
+    </div>
+
+    <section>
+      <h2>1. 앱에서 처리하는 데이터</h2>
+      <p>Simple Memo는 앱 기능 제공을 위해 다음 데이터를 처리할 수 있습니다.</p>
+
+      <h3>기기 내부에서 처리되는 데이터</h3>
+      <ul>
+        <li><strong>메모 내용</strong> — 사용자가 직접 작성한 메모 본문.</li>
+        <li><strong>메모 분류 및 상태</strong> — 그룹/분류, 정렬 정보, 생성·수정 시각, 휴지통 상태 등 메모 관리에 필요한 정보.</li>
+        <li><strong>앱 설정</strong> — 테마, 정렬 및 화면 설정, 백업 관련 설정, 광고 제거 상태 등.</li>
+        <li><strong>기존 설치본 데이터</strong> — 과거 버전의 로컬 메모 데이터가 존재하는 경우 새 저장소로 안전하게 이전하기 위해 기기 내부에서 처리될 수 있습니다.</li>
+      </ul>
+
+      <p class="good">위 메모 데이터는 기본적으로 개발자의 별도 서버로 전송되지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>2. Google Drive 백업 및 복원</h2>
+      <p>
+        Google Drive 백업은 사용자가 선택하여 사용하는 기능입니다. 이 기능을 사용할 때 Simple Memo는
+        Google의 인증 절차를 통해 앱이 생성하거나 선택한 백업 파일에 접근할 수 있는 권한을 요청합니다.
+      </p>
+      <ul>
+        <li><strong>전송되는 데이터</strong> — 메모, 메모 분류 및 백업 파일을 구성하는 메타데이터.</li>
+        <li><strong>백업 위치</strong> — 사용자의 Google Drive 안에 생성되는 Simple Memo 백업 폴더.</li>
+        <li><strong>백업 파일 메타데이터</strong> — 파일 이름, 파일 ID, 생성 시각, 파일 크기 등을 목록 표시·복원·이름 관리에 사용할 수 있습니다.</li>
+        <li><strong>Google 인증 토큰</strong> — Google Drive API 요청을 수행하는 동안 사용되며, 개발자가 운영하는 별도 서버로 전송하거나 보관하지 않습니다.</li>
+      </ul>
+      <p>
+        Google Drive에 저장된 백업은 사용자의 Google 계정에 저장되며 Google의 서비스 및 개인정보처리방침이 적용됩니다.
+        사용자는 Google Drive에서 해당 백업 파일을 직접 삭제하거나 Google 계정 설정에서 앱의 접근 권한을 해제할 수 있습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Android 시스템 백업 및 기기 이전</h2>
+      <p>
+        Simple Memo는 Android가 제공하는 백업 및 기기 이전 기능을 지원합니다. 사용자의 기기 및 Google 계정의 백업 설정에 따라
+        앱의 로컬 데이터베이스와 일부 설정이 Android 시스템의 암호화된 클라우드 백업 또는 기기 간 이전 기능에 포함될 수 있습니다.
+      </p>
+      <p class="muted">
+        이 처리는 Android/Google 플랫폼의 백업 기능에 의해 수행되며, Simple Memo 개발자가 별도의 백업 서버를 운영하는 방식이 아닙니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 광고 및 광고 개인정보 선택</h2>
+      <p>
+        무료 사용자의 앱 화면에는 Google Mobile Ads(AdMob)를 통한 배너 광고가 표시될 수 있습니다.
+        광고 요청은 Google User Messaging Platform(UMP)의 동의 및 개인정보 선택 상태를 고려하여 수행됩니다.
+      </p>
+      <p>
+        Google의 광고 SDK는 광고 제공, 부정 사용 방지, 빈도 제어, 성능 측정 및 법적 의무 이행 등을 위해
+        IP 주소, 기기 또는 광고 관련 식별자, 앱/기기 정보, 광고 상호작용 정보, 진단 정보 등을 처리할 수 있습니다.
+        실제 처리 범위는 사용자의 지역, 동의 선택, 기기 설정 및 Google의 정책에 따라 달라질 수 있습니다.
+      </p>
+      <p>
+        개인정보 선택 옵션이 제공되는 지역에서는 앱의 개인정보 선택 화면을 통해 관련 선택을 다시 확인할 수 있습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Google Play 결제</h2>
+      <p>
+        Simple Memo는 광고를 영구적으로 제거하는 1회성 인앱 상품 <code>remove_ads</code>를 제공할 수 있습니다.
+        결제와 구매 내역 확인은 Google Play Billing을 통해 처리됩니다.
+      </p>
+      <ul>
+        <li>Simple Memo 개발자는 사용자의 신용카드 번호나 결제수단 정보를 직접 수집하거나 저장하지 않습니다.</li>
+        <li>앱은 광고 제거 여부를 판단하기 위해 Google Play가 제공하는 구매 상태를 확인하고, 광고 제거 상태를 기기 내부에 저장할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 데이터 사용 목적</h2>
+      <p>처리되는 데이터는 다음 목적에 사용됩니다.</p>
+      <ul>
+        <li>메모 작성, 자동 저장, 검색, 분류, 정렬 및 휴지통 기능 제공</li>
+        <li>기존 설치본의 메모 데이터 이전</li>
+        <li>사용자가 요청한 로컬 또는 Google Drive 백업·복원 수행</li>
+        <li>광고 표시 및 광고 개인정보 선택 관리</li>
+        <li>광고 제거 인앱 구매 및 구매 상태 복원</li>
+        <li>앱 설정 유지 및 안정적인 기능 제공</li>
+      </ul>
+      <p class="muted">Simple Memo는 사용자의 메모 내용을 광고 타게팅용 프로필로 개발자 자체 분석하거나 판매하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>7. 제3자 서비스 및 데이터 제공</h2>
+      <p>Simple Memo는 사용자 데이터를 판매하지 않습니다.</p>
+      <p>다만 사용자가 선택하거나 앱 기능에 필요한 범위에서 다음 Google 서비스와 데이터가 처리될 수 있습니다.</p>
+      <ul>
+        <li><strong>Google Drive / Google Identity</strong> — 사용자가 요청한 백업 및 복원, 인증.</li>
+        <li><strong>Google Mobile Ads (AdMob)</strong> — 광고 제공 및 관련 측정.</li>
+        <li><strong>Google User Messaging Platform (UMP)</strong> — 광고 개인정보 선택 및 동의 관리.</li>
+        <li><strong>Google Play Billing</strong> — 인앱 구매 처리 및 구매 상태 확인.</li>
+        <li><strong>Android 시스템 백업</strong> — 사용자가 활성화한 기기/계정 백업 및 기기 이전.</li>
+      </ul>
+      <p>
+        Google 서비스의 데이터 처리에 대해서는
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a> 및
+        <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">Google 광고 관련 안내</a>를 확인할 수 있습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. 데이터 보관 및 삭제</h2>
+      <ul>
+        <li><strong>기기 내 메모</strong> — 사용자가 삭제할 때까지 기기에 저장될 수 있습니다. 일반 삭제는 휴지통으로 이동하며, 휴지통에서 복원하거나 완전히 삭제할 수 있습니다.</li>
+        <li><strong>앱 제거</strong> — 앱을 제거하면 기기 내 앱 데이터는 일반적으로 삭제되지만, Android 시스템 백업이 활성화되어 있으면 백업 사본은 Google/Android의 보관 정책에 따라 남을 수 있습니다.</li>
+        <li><strong>Google Drive 백업</strong> — 사용자의 Google Drive에 저장되며 사용자가 Google Drive에서 직접 삭제할 수 있습니다.</li>
+        <li><strong>광고 및 결제 관련 데이터</strong> — Google이 각 서비스의 정책에 따라 보관 및 삭제를 처리할 수 있습니다.</li>
+      </ul>
+      <p>
+        Simple Memo에는 개발자가 운영하는 별도의 사용자 계정 시스템이 없으므로, 개발자 서버에 저장된 앱 계정을 삭제하기 위한 별도 계정 삭제 절차는 없습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. 권한 및 보안</h2>
+      <p>
+        Simple Memo는 네트워크 기반의 Google Drive, 광고 및 결제 기능을 제공하기 위해 인터넷 및 네트워크 상태 권한을 사용할 수 있습니다.
+        메모 저장 기능 자체는 로컬 데이터베이스를 사용하며, 불필요한 외부 전송을 최소화하도록 구성됩니다.
+      </p>
+      <p>
+        Google Drive 백업은 사용자가 권한을 부여한 경우에만 수행되며, 앱이 생성하거나 사용자가 앱을 통해 선택한 Drive 파일에 접근하기 위한 범위의 권한을 사용합니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. 개인정보처리방침의 변경</h2>
+      <p>
+        Simple Memo의 기능, 외부 서비스 또는 데이터 처리 방식이 변경되는 경우 본 개인정보처리방침도 함께 업데이트할 수 있습니다.
+        중요한 변경이 있는 경우 이 페이지의 “최종 업데이트” 날짜를 변경합니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. 문의</h2>
+      <p>
+        Simple Memo의 개인정보 처리에 관한 문의는
+        <a href="mailto:me.jeongdo@gmail.com">me.jeongdo@gmail.com</a>으로 연락해 주세요.
+      </p>
+    </section>
+
+    <footer>
+      <div>Simple Memo Privacy Policy</div>
+      <div>패키지: com.gwe.code.spotmemo</div>
+      <div>최종 업데이트: 2026-09-09</div>
+    </footer>
+  </main>
+</body>
+</html>
