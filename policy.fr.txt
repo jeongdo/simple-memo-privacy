@@ -1,0 +1,72 @@
+Simple Memo est une application Android qui enregistre les notes sur votre appareil. Si vous choisissez d’utiliser les fonctions concernées, la sauvegarde et la restauration Google Drive, la publicité, les choix de confidentialité et Google Play Billing peuvent communiquer avec les services Google. Le développeur n’exploite aucun serveur distinct destiné à collecter le contenu de vos notes.
+
+Principe essentiel : le contenu des notes et les catégories sont enregistrés par défaut sur votre appareil. Une sauvegarde Google Drive n’est effectuée que lorsque vous la demandez.
+
+## 1. Données traitées par l’application
+
+• Notes et catégories — contenu des notes, texte envoyé à Simple Memo via le partage Android ou une action sur un texte sélectionné, catégories, ordre, dates de création/modification/suppression et identifiants internes. Ces données sont enregistrées par défaut dans l’espace privé de l’application sur l’appareil.
+• Réglages de l’application — thème, affichage de la liste, options de l’éditeur, durée de conservation de la corbeille et autres choix effectués par l’utilisateur.
+• Données de sauvegarde — lorsque vous lancez une sauvegarde Google Drive ou locale, les notes et catégories sont incluses dans le fichier de sauvegarde.
+• Autorisation du compte Google — lorsque vous demandez une sauvegarde ou une restauration Drive, l’authentification Google est utilisée pour obtenir les autorisations nécessaires. Les jetons d’accès Drive ne sont pas conservés de manière permanente dans la base de données des notes.
+• Données liées à la publicité et au consentement — Google Mobile Ads SDK et User Messaging Platform peuvent traiter des informations relatives à l’appareil, à la publicité et au consentement selon les règles de Google.
+• Informations d’achat — la propriété et l’état de l’achat unique de suppression des publicités sont vérifiés via Google Play Billing.
+
+## 2. Finalités
+
+• Créer, modifier, rechercher, classer, trier, supprimer et restaurer des notes.
+• Effectuer les sauvegardes et restaurations Google Drive ou locales demandées par l’utilisateur.
+• Afficher des publicités dans la version gratuite et proposer les choix de confidentialité requis.
+• Traiter l’achat unique de suppression des publicités et restaurer le droit associé.
+• Conserver les réglages de l’application.
+
+Le contenu des notes n’est pas transmis à Google Mobile Ads à des fins de personnalisation ou de ciblage publicitaire.
+
+## 3. Stockage et transferts externes
+
+Par défaut, les notes sont enregistrées dans l’espace privé de l’application sur votre appareil. Le texte envoyé à Simple Memo via le partage Android ou une action sur un texte sélectionné devient le contenu d’une note et est traité de la même manière.
+
+Lorsque vous lancez une sauvegarde Google Drive, les données concernées sont envoyées vers votre propre Google Drive dans le format de sauvegarde de Simple Memo. Les sauvegardes locales sont enregistrées à l’emplacement que vous choisissez au moyen du sélecteur de fichiers Android.
+
+Les fonctions de publicité, de consentement, d’autorisation Google Drive et d’achat intégré peuvent communiquer avec les services Google. Le développeur ne reçoit pas le contenu de vos notes par l’intermédiaire d’un serveur distinct qu’il exploiterait.
+
+## 4. Services tiers
+
+Simple Memo peut utiliser les services Google suivants :
+• Google Drive API / authentification Google — sauvegarde et restauration Drive demandées par l’utilisateur.
+• Google Mobile Ads (AdMob) — bannière publicitaire dans la version gratuite.
+• Google User Messaging Platform (UMP) — choix de confidentialité et de consentement relatifs à la publicité.
+• Google Play Billing — achat unique de suppression des publicités et vérification de propriété.
+
+Les informations traitées par ces services peuvent également être soumises à la politique de confidentialité et aux conditions de Google.
+
+## 5. Vente et divulgation arbitraire des données
+
+Le développeur ne vend pas les données de vos notes et ne communique pas arbitrairement leur contenu à des tiers. Des services externes ne sont sollicités que dans la mesure nécessaire aux fonctions que vous utilisez, par exemple la sauvegarde, la publicité et le consentement ou le traitement d’un achat.
+
+## 6. Conservation et suppression
+
+• Les notes peuvent rester sur l’appareil jusqu’à ce que vous les supprimiez, effaciez les données de l’application ou désinstalliez l’application.
+• Les notes placées dans la corbeille peuvent être supprimées définitivement par vous ou selon la durée de conservation automatique que vous avez choisie.
+• Les fichiers de sauvegarde Google Drive restent dans votre Google Drive jusqu’à ce que vous les supprimiez.
+• Vous gérez vous-même les fichiers de sauvegarde locale à l’emplacement choisi.
+• Le droit à la suppression des publicités est vérifié à partir de l’historique d’achat et de l’état de propriété associés à votre compte Google Play.
+
+## 7. Sécurité
+
+Simple Memo sépare le stockage des notes des fonctions de publicité, de paiement et de sauvegarde, et n’utilise que les accès nécessaires. Avant toute restauration, l’application vérifie le format de la sauvegarde, le nombre d’éléments, les références et l’intégrité SHA-256. Une sauvegarde qui échoue à ces contrôles est refusée sans remplacer les notes actuelles.
+
+## 8. Vie privée des enfants
+
+Simple Memo n’est pas conçu pour collecter spécifiquement des données personnelles concernant les enfants. Les paramètres de distribution et de publicité sont gérés conformément aux règles applicables de Google Play et de Google Ads.
+
+## 9. Modifications de la présente politique
+
+Cette politique peut être mise à jour si les fonctions de l’application, les SDK utilisés ou les pratiques de traitement des données changent. En cas de modification importante, la date de dernière mise à jour ci-dessous sera révisée.
+
+## 10. Contact
+
+Pour toute question relative à la confidentialité dans Simple Memo, contactez me.jeongdo@gmail.com.
+
+Exploitant : JEONGDO
+Package de l’application : com.gwe.code.spotmemo
+Dernière mise à jour : 2026-09-22

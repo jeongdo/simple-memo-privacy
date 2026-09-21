@@ -1,0 +1,72 @@
+Simple Memo stores notes on your device. If you choose to use them, Google Drive backup and restore, advertising, privacy choices, and Google Play Billing may communicate with Google services. The developer does not operate a separate server that collects the contents of your notes.
+
+Core principle: note content and categories are stored on the device by default. Google Drive backup runs only when you request it.
+
+## 1. Information handled by the app
+
+• Notes and categories — note text, text received through Android Share or text-selection actions, category, order, created/updated/deleted times, and internal identifiers. These are stored in the app's private storage by default.
+• App settings — theme, list display, editor options, Trash retention period, and other choices you make.
+• Backup data — if you start a Google Drive or local-file backup, notes and categories are included in the backup file.
+• Google account authorization — when you request Drive backup or restore, Google authentication is used to request the permissions needed for that operation. Drive access tokens are not stored permanently in the memo database.
+• Advertising and consent information — Google Mobile Ads SDK and User Messaging Platform may process device, advertising, consent, and related information as defined by Google.
+• Purchase information — ownership and purchase state for the one-time ad-removal product are checked through Google Play Billing.
+
+## 2. Why this information is used
+
+• To create, edit, search, categorize, sort, delete, and restore notes.
+• To perform Google Drive or local backup and restore that you request.
+• To show ads in the free version and provide applicable privacy choices.
+• To process and restore ownership of the one-time ad-removal purchase.
+• To keep your app settings.
+
+Note content is not sent to Google Mobile Ads for ad personalization or targeting.
+
+## 3. Storage and external transfer
+
+Notes are stored in the app's private storage on your device by default. Text that you send to Simple Memo through Android Share or text selection becomes note content and is handled in the same way.
+
+If you start a Google Drive backup, the selected backup data is uploaded to your Google Drive in Simple Memo's backup format. Local backups are saved to a location you choose through Android's system file picker.
+
+Advertising, consent, Google Drive authorization, and in-app purchase features may communicate with Google services. The developer does not receive your note content through a separate developer-operated server.
+
+## 4. Third-party services
+
+Simple Memo may use:
+• Google Drive API / Google authentication — user-requested Drive backup and restore.
+• Google Mobile Ads (AdMob) — banner advertising in the free version.
+• Google User Messaging Platform (UMP) — advertising privacy and consent choices.
+• Google Play Billing — one-time ad-removal purchase and ownership verification.
+
+Information processed by these services may also be governed by Google's privacy policy and terms.
+
+## 5. Sale and arbitrary disclosure of data
+
+The developer does not sell your note data. Note content is not arbitrarily provided to third parties. Data is shared with external services only as needed for features you explicitly use, such as backup, advertising/consent, or purchase processing.
+
+## 6. Retention and deletion
+
+• Notes may remain on your device until you delete them, clear the app's data, or uninstall the app.
+• Notes in Trash may be permanently deleted by you or according to the automatic retention period you select.
+• Google Drive backup files remain in your Google Drive until you remove them.
+• Local backup files are managed by you at the location you selected.
+• Ad-removal ownership is checked against the purchase record and ownership state associated with your Google Play account.
+
+## 7. Security
+
+Simple Memo separates note storage from advertising, billing, and backup functions and uses only the access needed for those features. Before a backup is restored, its format, item counts, references, and SHA-256 integrity are checked. A backup that fails validation is rejected without replacing the current notes.
+
+## 8. Children's privacy
+
+Simple Memo is not designed to separately collect children's personal information. Distribution and advertising settings are managed in accordance with applicable Google Play and Google advertising policies.
+
+## 9. Changes to this policy
+
+This policy may be updated when app features, SDKs, or data-handling practices change. The last-updated date below will be revised when material changes are made.
+
+## 10. Contact
+
+For questions about privacy in Simple Memo, contact me.jeongdo@gmail.com.
+
+Operator: JEONGDO
+App package: com.gwe.code.spotmemo
+Last updated: 2026-09-22

@@ -1,0 +1,72 @@
+Simple Memo è un’app Android che salva i memo sul dispositivo. Se scegli di utilizzare le relative funzioni, backup e ripristino su Google Drive, pubblicità, scelte sulla privacy e Google Play Billing possono comunicare con i servizi Google. Lo sviluppatore non gestisce un server separato destinato a raccogliere il contenuto dei tuoi memo.
+
+Principio fondamentale: il contenuto dei memo e le categorie vengono salvati per impostazione predefinita sul dispositivo. Il backup su Google Drive viene eseguito solo quando lo richiedi.
+
+## 1. Dati trattati dall’app
+
+• Memo e categorie — contenuto dei memo, testo inviato a Simple Memo tramite la condivisione Android o un’azione sul testo selezionato, categorie, ordine, date di creazione/modifica/eliminazione e identificatori interni. Per impostazione predefinita questi dati restano nell’area privata dell’app sul dispositivo.
+• Impostazioni dell’app — tema, visualizzazione dell’elenco, opzioni dell’editor, durata di conservazione del Cestino e altre preferenze scelte dall’utente.
+• Dati di backup — se avvii un backup su Google Drive o in un file locale, memo e categorie vengono inclusi nel file di backup.
+• Autorizzazione dell’account Google — quando richiedi un backup o un ripristino da Drive, viene usata l’autenticazione Google per ottenere le autorizzazioni necessarie. I token di accesso a Drive non vengono conservati in modo permanente nel database dei memo.
+• Dati relativi a pubblicità e consenso — Google Mobile Ads SDK e User Messaging Platform possono trattare informazioni sul dispositivo, sulla pubblicità, sul consenso e dati correlati secondo le regole di Google.
+• Informazioni sugli acquisti — la proprietà e lo stato dell’acquisto una tantum per rimuovere la pubblicità vengono verificati tramite Google Play Billing.
+
+## 2. Finalità
+
+• Creare, modificare, cercare, classificare, ordinare, eliminare e ripristinare i memo.
+• Eseguire backup e ripristini su Google Drive o locali richiesti dall’utente.
+• Mostrare pubblicità nella versione gratuita e offrire le scelte sulla privacy necessarie.
+• Gestire l’acquisto una tantum per rimuovere la pubblicità e ripristinarne il diritto.
+• Conservare le impostazioni dell’app.
+
+Il contenuto dei memo non viene inviato a Google Mobile Ads per la personalizzazione o il targeting pubblicitario.
+
+## 3. Archiviazione e trasferimenti esterni
+
+Per impostazione predefinita i memo vengono salvati nell’area privata dell’app sul dispositivo. Il testo inviato a Simple Memo tramite la condivisione Android o un’azione sul testo selezionato diventa contenuto di un memo e viene trattato allo stesso modo.
+
+Quando avvii un backup su Google Drive, i dati interessati vengono caricati nel tuo Google Drive nel formato di backup di Simple Memo. I backup locali vengono salvati nella posizione scelta tramite il selettore di file di Android.
+
+Le funzioni di pubblicità, consenso, autorizzazione Google Drive e acquisti in-app possono comunicare con i servizi Google. Lo sviluppatore non riceve il contenuto dei tuoi memo tramite un proprio server separato.
+
+## 4. Servizi di terze parti
+
+Simple Memo può utilizzare i seguenti servizi Google:
+• Google Drive API / autenticazione Google — backup e ripristino Drive richiesti dall’utente.
+• Google Mobile Ads (AdMob) — banner pubblicitario nella versione gratuita.
+• Google User Messaging Platform (UMP) — scelte sulla privacy e sul consenso relative alla pubblicità.
+• Google Play Billing — acquisto una tantum per rimuovere la pubblicità e verifica del relativo diritto.
+
+Le informazioni trattate da questi servizi possono essere soggette anche all’informativa sulla privacy e ai termini di Google.
+
+## 5. Vendita e divulgazione arbitraria dei dati
+
+Lo sviluppatore non vende i dati dei tuoi memo e non ne comunica arbitrariamente il contenuto a terzi. I servizi esterni vengono utilizzati solo nella misura necessaria alle funzioni che scegli di usare, ad esempio backup, pubblicità e consenso o gestione degli acquisti.
+
+## 6. Conservazione ed eliminazione
+
+• I memo possono restare sul dispositivo finché non li elimini, cancelli i dati dell’app o disinstalli l’app.
+• I memo nel Cestino possono essere eliminati definitivamente da te oppure secondo il periodo di conservazione automatica che hai scelto.
+• I file di backup su Google Drive rimangono nel tuo Google Drive finché non li elimini.
+• I file di backup locali sono gestiti da te nella posizione selezionata.
+• Il diritto alla rimozione della pubblicità viene verificato in base alla cronologia degli acquisti e allo stato di proprietà associati al tuo account Google Play.
+
+## 7. Sicurezza
+
+Simple Memo separa l’archiviazione dei memo dalle funzioni di pubblicità, pagamento e backup e utilizza solo gli accessi necessari. Prima di un ripristino vengono verificati formato del backup, numero di elementi, riferimenti e integrità SHA-256. Un backup che non supera i controlli viene rifiutato senza sostituire i memo correnti.
+
+## 8. Privacy dei minori
+
+Simple Memo non è progettato per raccogliere specificamente dati personali dei minori. Le impostazioni di distribuzione e pubblicità vengono gestite in conformità con le norme applicabili di Google Play e Google Ads.
+
+## 9. Modifiche alla presente informativa
+
+Questa informativa può essere aggiornata quando cambiano le funzioni dell’app, gli SDK utilizzati o le modalità di trattamento dei dati. In caso di modifiche importanti verrà aggiornata la data riportata di seguito.
+
+## 10. Contatti
+
+Per domande sulla privacy in Simple Memo, scrivi a me.jeongdo@gmail.com.
+
+Titolare/operatore: JEONGDO
+Package dell’app: com.gwe.code.spotmemo
+Ultimo aggiornamento: 2026-09-22

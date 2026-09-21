@@ -1,151 +1,328 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark" />
-  <title>Simple Memo 개인정보처리방침</title>
-  <meta name="description" content="Simple Memo(심플 메모) Android 앱 개인정보처리방침" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Simple Memo Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Simple Memo Android app." />
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #0b1020;
-      --panel: #111827;
-      --panel-2: #172033;
-      --text: #e5edf8;
-      --muted: #9aabc2;
-      --line: #26344d;
-      --accent: #62b4ff;
-      --good: #7dd3a8;
+      color-scheme: light dark;
+      --bg: #f7f4ec;
+      --panel: #fffdf8;
+      --text: #25231f;
+      --muted: #69645c;
+      --line: #ddd5c8;
+      --accent: #65543c;
+      --soft: #eee7dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #191817;
+        --panel: #23211f;
+        --text: #f1ece3;
+        --muted: #b7aea3;
+        --line: #3d3934;
+        --accent: #d9c6a9;
+        --soft: #302d29;
+      }
     }
     * { box-sizing: border-box; }
-    html { background: var(--bg); }
     body {
       margin: 0;
-      min-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      background: var(--bg);
       color: var(--text);
-      background: radial-gradient(circle at 15% 0%, rgba(38, 108, 180, .16), transparent 34rem), var(--bg);
-      line-height: 1.72;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans KR", sans-serif;
+      line-height: 1.68;
     }
-    main { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 80px; }
-    header { margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
-    .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
-    h1 { margin: 0; font-size: clamp(30px, 6vw, 44px); line-height: 1.15; letter-spacing: -.03em; }
-    .lead { max-width: 760px; margin: 14px 0 0; color: var(--muted); font-size: 16px; }
-    .summary { margin: 26px 0; padding: 18px 20px; border: 1px solid rgba(98, 180, 255, .28); border-radius: 14px; background: rgba(98, 180, 255, .07); }
-    .summary strong { color: #d9efff; }
-    section { margin-top: 18px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 16px; background: rgba(17, 24, 39, .88); }
-    h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: -.01em; }
-    p { margin: 10px 0; }
-    ul { margin: 10px 0 0; padding-left: 22px; }
-    li + li { margin-top: 7px; }
-    .muted { color: var(--muted); }
-    .good { color: var(--good); font-weight: 700; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    code { padding: 2px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel-2); color: #d8e7fb; font-size: .92em; }
-    footer { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
-    @media (max-width: 640px) { main { padding-top: 34px; } section { padding: 18px; } }
+    main {
+      width: min(900px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 42px 0 72px;
+    }
+    header {
+      padding: 24px 0 26px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+    .topline {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 6vw, 44px);
+      line-height: 1.14;
+      letter-spacing: -.025em;
+    }
+    .lead {
+      margin: 12px 0 0;
+      max-width: 760px;
+      color: var(--muted);
+    }
+    select {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      color: var(--text);
+      padding: 10px 34px 10px 12px;
+      font: inherit;
+      font-weight: 600;
+      background-image:
+        linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+        linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+      background-position:
+        calc(100% - 15px) 50%,
+        calc(100% - 10px) 50%;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px 26px 30px;
+    }
+    section + section {
+      border-top: 1px solid var(--line);
+      margin-top: 22px;
+      padding-top: 18px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 19px;
+      letter-spacing: -.01em;
+    }
+    p { margin: 9px 0; }
+    .bullet { padding-left: 1.1em; text-indent: -1.1em; }
+    .loading { color: var(--muted); }
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 18px 4px 0;
+    }
+    @media (max-width: 620px) {
+      main { padding-top: 20px; }
+      article { padding: 20px 18px 24px; border-radius: 14px; }
+      .topline { align-items: flex-start; }
+      select { width: 100%; }
+    }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <p class="eyebrow">Simple Memo · Privacy Policy</p>
-      <h1>개인정보처리방침</h1>
-      <p class="lead">심플 메모는 메모를 기기에 저장하고, 사용자가 선택한 경우 Google Drive 백업·복원과 광고 및 Google Play 인앱 구매 기능을 제공하는 Android 앱입니다.</p>
+      <div class="topline">
+        <div>
+          <p class="eyebrow">Simple Memo</p>
+          <h1 id="page-title">Privacy Policy</h1>
+        </div>
+        <label>
+          <span id="language-label" style="position:absolute;left:-9999px">Language</span>
+          <select id="language" aria-labelledby="language-label">
+            <option value="en">English</option>
+            <option value="ko">한국어</option>
+            <option value="ja">日本語</option>
+            <option value="ru">Русский</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+          </select>
+        </label>
+      </div>
+      <p class="lead" id="page-lead">Simple Memo stores notes on your device by default. This page explains how app data, backup, ads and purchases are handled.</p>
     </header>
 
-    <div class="summary">
-      <strong>핵심 원칙:</strong> 메모 본문과 분류는 기본적으로 사용자의 기기에 저장됩니다. 개발자는 별도의 자체 서버를 운영하여 메모 내용을 수집하지 않으며, Google Drive 백업은 사용자가 직접 요청한 경우에만 수행됩니다.
-    </div>
+    <article id="policy"><p>Simple Memo stores notes on your device. If you choose to use them, Google Drive backup and restore, advertising, privacy choices, and Google Play Billing may communicate with Google services. The developer does not operate a separate server that collects the contents of your notes.</p>
 
-    <section>
-      <h2>1. 앱에서 처리하는 정보</h2>
-      <p>심플 메모는 기능 제공을 위해 다음 정보를 처리할 수 있습니다.</p>
-      <ul>
-        <li><strong>메모 및 분류 데이터</strong> — 메모 본문, 분류, 정렬 순서, 생성·수정·삭제 시각 및 앱 내부 식별자. 기본적으로 기기 내 앱 전용 저장소에 보관됩니다.</li>
-        <li><strong>앱 설정</strong> — 테마, 목록 표시, 에디터 옵션, 휴지통 보관 기간 등 사용자가 선택한 설정.</li>
-        <li><strong>백업 데이터</strong> — 사용자가 Google Drive 또는 로컬 파일 백업을 직접 실행한 경우 메모 및 분류 데이터가 백업 파일에 포함됩니다.</li>
-        <li><strong>Google 계정 권한 정보</strong> — Google Drive 백업·복원을 사용자가 요청할 때 Google의 인증 절차를 통해 필요한 권한을 요청합니다. 앱은 Drive 접근 토큰을 메모 데이터베이스에 영구 저장하지 않습니다.</li>
-        <li><strong>광고 및 동의 관련 정보</strong> — 무료 버전의 광고 표시를 위해 Google Mobile Ads SDK와 User Messaging Platform이 기기·광고 식별자, 동의 상태 등 Google이 정한 정보를 처리할 수 있습니다.</li>
-        <li><strong>구매 정보</strong> — 광고 제거 구매의 상품 소유 여부 및 구매 상태는 Google Play Billing을 통해 확인합니다.</li>
-      </ul>
-    </section>
+<p>Core principle: note content and categories are stored on the device by default. Google Drive backup runs only when you request it.</p>
 
-    <section>
-      <h2>2. 이용 목적</h2>
-      <ul>
-        <li>메모 작성, 검색, 분류, 정렬, 휴지통 및 복원 기능 제공</li>
-        <li>사용자가 요청한 Google Drive 또는 로컬 백업·복원 수행</li>
-        <li>무료 버전의 광고 표시 및 개인정보 동의 선택 제공</li>
-        <li>광고 제거 1회 구매의 처리 및 구매 소유권 복원</li>
-        <li>앱 설정 유지</li>
-      </ul>
-      <p class="muted">메모 내용은 광고 개인화나 광고 타기팅을 위해 Google Mobile Ads SDK에 전달하지 않습니다.</p>
-    </section>
+</section><section><h2>1. Information handled by the app</h2>
 
-    <section>
-      <h2>3. 저장 위치와 외부 전송</h2>
-      <p><span class="good">메모 데이터는 기본적으로 기기 내 앱 전용 저장소에 저장됩니다.</span></p>
-      <p>사용자가 Google Drive 백업을 실행하면 선택된 메모 데이터가 앱의 백업 파일 형식으로 Google Drive에 전송됩니다. 로컬 백업은 Android의 시스템 파일 선택기를 통해 사용자가 직접 지정한 위치에 저장됩니다.</p>
-      <p>광고, 개인정보 동의, Google Drive 인증 및 인앱 구매 기능을 사용하는 과정에서는 Google의 서비스와 통신이 발생할 수 있습니다.</p>
-    </section>
+<p class="bullet">• Notes and categories — note text, text received through Android Share or text-selection actions, category, order, created/updated/deleted times, and internal identifiers. These are stored in the app's private storage by default.</p>
+<p class="bullet">• App settings — theme, list display, editor options, Trash retention period, and other choices you make.</p>
+<p class="bullet">• Backup data — if you start a Google Drive or local-file backup, notes and categories are included in the backup file.</p>
+<p class="bullet">• Google account authorization — when you request Drive backup or restore, Google authentication is used to request the permissions needed for that operation. Drive access tokens are not stored permanently in the memo database.</p>
+<p class="bullet">• Advertising and consent information — Google Mobile Ads SDK and User Messaging Platform may process device, advertising, consent, and related information as defined by Google.</p>
+<p class="bullet">• Purchase information — ownership and purchase state for the one-time ad-removal product are checked through Google Play Billing.</p>
 
-    <section>
-      <h2>4. 제3자 서비스</h2>
-      <p>심플 메모는 다음 Google 서비스를 사용할 수 있습니다.</p>
-      <ul>
-        <li>Google Drive API / Google 인증 — 사용자가 요청한 Drive 백업 및 복원</li>
-        <li>Google Mobile Ads (AdMob) — 무료 버전의 배너 광고</li>
-        <li>Google User Messaging Platform (UMP) — 광고 개인정보 동의 선택</li>
-        <li>Google Play Billing — 광고 제거 인앱 구매 및 소유권 확인</li>
-      </ul>
-      <p>각 서비스에서 처리되는 정보에는 해당 서비스 제공자인 Google의 개인정보처리방침 및 이용약관이 적용될 수 있습니다.</p>
-    </section>
+</section><section><h2>2. Why this information is used</h2>
 
-    <section>
-      <h2>5. 데이터 판매 및 임의 제공</h2>
-      <p>개발자는 사용자 메모 데이터를 판매하지 않습니다. 또한 사용자가 명시적으로 선택한 백업·복원, 광고, 동의 또는 구매 기능을 수행하는 데 필요한 경우를 제외하고 메모 내용을 제3자에게 임의로 제공하지 않습니다.</p>
-    </section>
+<p class="bullet">• To create, edit, search, categorize, sort, delete, and restore notes.</p>
+<p class="bullet">• To perform Google Drive or local backup and restore that you request.</p>
+<p class="bullet">• To show ads in the free version and provide applicable privacy choices.</p>
+<p class="bullet">• To process and restore ownership of the one-time ad-removal purchase.</p>
+<p class="bullet">• To keep your app settings.</p>
 
-    <section>
-      <h2>6. 보관 및 삭제</h2>
-      <ul>
-        <li>메모는 사용자가 삭제하거나 앱 데이터를 삭제할 때까지 기기에 보관될 수 있습니다.</li>
-        <li>휴지통 메모는 사용자가 직접 완전 삭제하거나 사용자가 설정한 자동 삭제 기간에 따라 삭제될 수 있습니다.</li>
-        <li>Google Drive 백업 파일은 사용자의 Google Drive에 저장되며 사용자가 직접 삭제할 수 있습니다.</li>
-        <li>로컬 백업 파일은 사용자가 선택한 저장 위치에서 사용자가 직접 관리합니다.</li>
-        <li>광고 제거 구매 기록은 Google Play 계정의 구매 기록과 소유권 상태를 기준으로 확인됩니다.</li>
-      </ul>
-    </section>
+<p>Note content is not sent to Google Mobile Ads for ad personalization or targeting.</p>
 
-    <section>
-      <h2>7. 보안</h2>
-      <p>심플 메모는 메모 저장 기능과 광고·결제·백업 기능을 분리하고, 필요한 범위의 네트워크 및 서비스 접근만 사용합니다. 백업 파일은 형식·항목 수·참조 관계 및 SHA-256 무결성 검증을 거친 뒤 복원하며, 검증에 실패한 백업은 현재 메모 데이터를 변경하지 않고 거부합니다.</p>
-    </section>
+</section><section><h2>3. Storage and external transfer</h2>
 
-    <section>
-      <h2>8. 아동의 개인정보</h2>
-      <p>심플 메모는 아동의 개인정보를 별도로 수집하기 위한 서비스가 아닙니다. 앱 배포 대상과 광고 설정은 Google Play 및 Google 광고 정책에 맞게 관리합니다.</p>
-    </section>
+<p>Notes are stored in the app's private storage on your device by default. Text that you send to Simple Memo through Android Share or text selection becomes note content and is handled in the same way.</p>
 
-    <section>
-      <h2>9. 개인정보처리방침 변경</h2>
-      <p>앱 기능, 사용 SDK 또는 데이터 처리 방식이 변경되는 경우 본 개인정보처리방침을 업데이트할 수 있습니다. 중요한 변경이 있는 경우 이 페이지의 최종 업데이트 날짜를 변경합니다.</p>
-    </section>
+<p>If you start a Google Drive backup, the selected backup data is uploaded to your Google Drive in Simple Memo's backup format. Local backups are saved to a location you choose through Android's system file picker.</p>
 
-    <section>
-      <h2>10. 문의</h2>
-      <p>심플 메모의 개인정보 처리에 관한 문의는 <a href="mailto:me.jeongdo@gmail.com">me.jeongdo@gmail.com</a>으로 연락해 주세요.</p>
-    </section>
+<p>Advertising, consent, Google Drive authorization, and in-app purchase features may communicate with Google services. The developer does not receive your note content through a separate developer-operated server.</p>
 
-    <footer>
-      <div>Simple Memo Privacy Policy · 운영자 정도 (JEONGDO)</div>
-      <div>앱 패키지: <code>com.gwe.code.spotmemo</code></div>
-      <div>최종 업데이트: 2026-09-19</div>
-    </footer>
+</section><section><h2>4. Third-party services</h2>
+
+<p>Simple Memo may use:</p>
+<p class="bullet">• Google Drive API / Google authentication — user-requested Drive backup and restore.</p>
+<p class="bullet">• Google Mobile Ads (AdMob) — banner advertising in the free version.</p>
+<p class="bullet">• Google User Messaging Platform (UMP) — advertising privacy and consent choices.</p>
+<p class="bullet">• Google Play Billing — one-time ad-removal purchase and ownership verification.</p>
+
+<p>Information processed by these services may also be governed by Google's privacy policy and terms.</p>
+
+</section><section><h2>5. Sale and arbitrary disclosure of data</h2>
+
+<p>The developer does not sell your note data. Note content is not arbitrarily provided to third parties. Data is shared with external services only as needed for features you explicitly use, such as backup, advertising/consent, or purchase processing.</p>
+
+</section><section><h2>6. Retention and deletion</h2>
+
+<p class="bullet">• Notes may remain on your device until you delete them, clear the app's data, or uninstall the app.</p>
+<p class="bullet">• Notes in Trash may be permanently deleted by you or according to the automatic retention period you select.</p>
+<p class="bullet">• Google Drive backup files remain in your Google Drive until you remove them.</p>
+<p class="bullet">• Local backup files are managed by you at the location you selected.</p>
+<p class="bullet">• Ad-removal ownership is checked against the purchase record and ownership state associated with your Google Play account.</p>
+
+</section><section><h2>7. Security</h2>
+
+<p>Simple Memo separates note storage from advertising, billing, and backup functions and uses only the access needed for those features. Before a backup is restored, its format, item counts, references, and SHA-256 integrity are checked. A backup that fails validation is rejected without replacing the current notes.</p>
+
+</section><section><h2>8. Children's privacy</h2>
+
+<p>Simple Memo is not designed to separately collect children's personal information. Distribution and advertising settings are managed in accordance with applicable Google Play and Google advertising policies.</p>
+
+</section><section><h2>9. Changes to this policy</h2>
+
+<p>This policy may be updated when app features, SDKs, or data-handling practices change. The last-updated date below will be revised when material changes are made.</p>
+
+</section><section><h2>10. Contact</h2>
+
+<p>For questions about privacy in Simple Memo, contact me.jeongdo@gmail.com.</p>
+
+<p>Operator: JEONGDO</p>
+<p>App package: com.gwe.code.spotmemo</p>
+<p>Last updated: 2026-09-22</p>
+</section></article>
+    <footer>Simple Memo · com.gwe.code.spotmemo · JEONGDO</footer>
   </main>
+
+  <script>
+    (() => {
+      const supported = ["en", "ko", "ja", "ru", "fr", "it"];
+      const ui = {
+        en: {
+          title: "Privacy Policy",
+          lead: "Simple Memo stores notes on your device by default. This page explains how app data, backup, ads and purchases are handled."
+        },
+        ko: {
+          title: "개인정보처리방침",
+          lead: "Simple Memo는 메모를 기본적으로 기기에 저장합니다. 이 페이지에서는 앱 데이터, 백업, 광고 및 구매 정보의 처리 방식을 안내합니다."
+        },
+        ja: {
+          title: "プライバシーポリシー",
+          lead: "Simple Memo はメモを基本的に端末内へ保存します。このページでは、アプリのデータ、バックアップ、広告、購入情報の取り扱いについて説明します。"
+        },
+        ru: {
+          title: "Политика конфиденциальности",
+          lead: "По умолчанию Simple Memo хранит заметки на вашем устройстве. Здесь описано, как приложение обрабатывает данные, резервные копии, рекламу и покупки."
+        },
+        fr: {
+          title: "Politique de confidentialité",
+          lead: "Simple Memo enregistre les notes sur votre appareil par défaut. Cette page explique le traitement des données, des sauvegardes, de la publicité et des achats."
+        },
+        it: {
+          title: "Informativa sulla privacy",
+          lead: "Simple Memo salva i memo sul dispositivo per impostazione predefinita. Questa pagina spiega come vengono gestiti dati, backup, pubblicità e acquisti."
+        }
+      };
+
+      const titleEl = document.getElementById("page-title");
+      const leadEl = document.getElementById("page-lead");
+      const selectEl = document.getElementById("language");
+      const policyEl = document.getElementById("policy");
+
+      const escapeHtml = (value) => value
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+
+      function render(text) {
+        const nodes = [];
+        let openSection = false;
+        for (const raw of text.split(/\r?\n/)) {
+          const line = raw.trimEnd();
+          if (!line.trim()) continue;
+          if (line.startsWith("## ")) {
+            if (openSection) nodes.push("</section>");
+            nodes.push("<section><h2>" + escapeHtml(line.slice(3)) + "</h2>");
+            openSection = true;
+          } else if (line.startsWith("• ")) {
+            nodes.push('<p class="bullet">' + escapeHtml(line) + "</p>");
+          } else {
+            nodes.push("<p>" + escapeHtml(line) + "</p>");
+          }
+        }
+        if (openSection) nodes.push("</section>");
+        policyEl.innerHTML = nodes.join("");
+      }
+
+      async function setLanguage(lang, rememberChoice) {
+        if (!supported.includes(lang)) lang = "en";
+        selectEl.value = lang;
+        document.documentElement.lang = lang;
+        titleEl.textContent = ui[lang].title;
+        leadEl.textContent = ui[lang].lead;
+        document.title = "Simple Memo · " + ui[lang].title;
+
+        if (rememberChoice) {
+          try { localStorage.setItem("simple-memo-privacy-lang", lang); } catch (_) {}
+        }
+
+        if (lang === "en" && policyEl.dataset.loaded !== "dynamic") {
+          return;
+        }
+
+        policyEl.classList.add("loading");
+        try {
+          const response = await fetch("policy." + lang + ".txt", { cache: "no-cache" });
+          if (!response.ok) throw new Error("policy fetch failed");
+          render(await response.text());
+          policyEl.dataset.loaded = "dynamic";
+        } catch (_) {
+          if (lang !== "en") await setLanguage("en", false);
+        } finally {
+          policyEl.classList.remove("loading");
+        }
+      }
+
+      const params = new URLSearchParams(location.search);
+      const requested = params.get("lang");
+      let saved = null;
+      try { saved = localStorage.getItem("simple-memo-privacy-lang"); } catch (_) {}
+      const browser = (navigator.language || "en").slice(0, 2).toLowerCase();
+      const initial = supported.includes(requested) ? requested
+        : supported.includes(saved) ? saved
+        : supported.includes(browser) ? browser
+        : "en";
+
+      selectEl.addEventListener("change", () => setLanguage(selectEl.value, true));
+      setLanguage(initial, false);
+    })();
+  </script>
 </body>
 </html>
